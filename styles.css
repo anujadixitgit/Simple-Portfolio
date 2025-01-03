@@ -1,0 +1,184 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: whitesmoke;
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    background: linear-gradient(135deg, black, black);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.1);
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }
+  
+  section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+  }
+  
+  h2 {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  #skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  #skills ul li {
+    background-color:  black;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  #skills ul li:hover {
+    background-color: grey;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  #portfolio .portfolio-item {
+    background-color:  black;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #portfolio .portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(16, 14, 14, 0.2);
+    background-color: grey;
+  }
+  
+  #portfolio a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  #portfolio a:hover {
+    color: #3498db;
+  }
+  
+  #resume a {
+    color: #2980b9;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  #resume a:hover {
+    color: #3498db;
+  }
+  
+  #contact {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  #contact a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  button#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 2em;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  
+  button#scrollToTopBtn:hover {
+    opacity: 1;
+  }
+  
+  button#scrollToTopBtn:focus {
+    outline: none;
+  }
+  
+  button#scrollToTopBtn:active {
+    transform: scale(0.9);
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 768px) {
+    header {
+      padding: 30px 20px;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  
+    #skills ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
